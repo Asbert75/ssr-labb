@@ -1,3 +1,23 @@
+function error(message) {
+    return { "Error": message }
+}
+
+// Check to see if all parameters are matched ---- FUNGERAR INTE ÄNNU
+function validateData(data) {
+    if(
+        (typeof data.name === "string" && data.price.length > 0)
+        && (typeof data.price === "string" && data.price.length > 0)
+        && (typeof data.currency === "string" && data.currency.length > 0)
+        && (typeof data.volume === "string" && data.volume.length > 0)
+        && (typeof data.origin === "string" && data.origin.length > 0)
+        && (typeof data.alcoholPercentage === "string" && data.alcoholPercentage > 0)
+        && (typeof data.description === "string" && data.description > 0)) {
+        return true;
+    }
+    
+    return false;
+}
+
 let wines = {
     list: {
         "Damigian Rosso": {
@@ -26,19 +46,42 @@ let wines = {
         }
     },
     listWines: function() {
-        return this.list;
+        return this.list
     },
     getWine: function(wine) {
-        console.log("Get", wine);
-        return wine;
+        let match;
+
+        Object.keys(this.list).forEach( item => {
+            if(wine === item) {
+                match = this.list[item]
+            }
+        })
+
+        return match || error("Can't find wine'" + wine + "'!")
     },
     deleteWine: function(wine) {
-        console.log("Deleted", wine);
-        return wine;
+        let msg;
+
+        Object.keys(this.list).forEach( item => {
+            if(wine === item) {
+                delete this.list[wine]
+                msg = { "Message" : "Succesfully deleted '" + wine + "'!" }
+                console.log("Deleted '" + wine + "'!")
+            }
+        })
+        return msg || error("Can't find wine'" + wine + "'!")
     },
-    editWine: function(wine) {
-        console.log("Edited", wine);
-        return wine;
+    addWine: function(data) {
+        let msg;
+
+        if(validateData(data)) {
+
+        }
+    },
+    editWine: function(data) {
+
+
+        return wine
     }
 }
 
