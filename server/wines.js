@@ -12,10 +12,10 @@ function validateData(data) {
         && (typeof data.origin === "string" && data.origin.length > 0)
         && (typeof data.alcoholPercentage === "string" && data.alcoholPercentage > 0)
         && (typeof data.description === "string" && data.description > 0)) {
-        return true;
+        return true
     }
     
-    return false;
+    return false
 }
 
 let wines = {
@@ -49,7 +49,7 @@ let wines = {
         return this.list
     },
     getWine: function(wine) {
-        let match;
+        let match
 
         Object.keys(this.list).forEach( item => {
             if(wine === item) {
@@ -60,29 +60,42 @@ let wines = {
         return match || error("Can't find wine'" + wine + "'!")
     },
     deleteWine: function(wine) {
-        let msg;
+        let msg
 
         Object.keys(this.list).forEach( item => {
             if(wine === item) {
                 delete this.list[wine]
-                msg = { "Message" : "Succesfully deleted '" + wine + "'!" }
+                msg = { "Message": "Succesfully deleted '" + wine + "'!" }
                 console.log("Deleted '" + wine + "'!")
             }
         })
         return msg || error("Can't find wine'" + wine + "'!")
     },
-    addWine: function(data) {
-        let msg;
+    addWine: function(name, data) {
+        let msg
 
-        if(validateData(data)) {
-
+        if(!this.list[name]) {
+            this.list[name] = data
+            msg = { "Message": "Succesfully added '" + name + "'!" }
         }
+
+        return msg || error("Can't add wine '" + name + "'. Wine already exists.")
     },
-    editWine: function(data) {
+    editWine: function(name, data) {
+        let msg
 
+        if(this.list[name]) {
+            Object.keys(data).forEach( key => {
+                if(this.list[name][key]) {
+                    this.list[name][key] = data[key]
+                }
+            })
 
-        return wine
+            msg = { "Message": "Updated '" + name + '"!'}
+        }
+
+        return msg || error("Can't find wine '" + name + "'!")
     }
 }
 
-module.exports = wines;
+module.exports = wines

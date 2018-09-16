@@ -28,7 +28,17 @@ app.delete("/wines/:wine", (req, res) => {
 
 // Add a wine
 app.post("/wines", (req, res) => {
-    res.send("Post test")
+    let name = req.query.name;
+    let data = { 
+        price: req.query.price,
+        currency: req.query.currency,
+        volume: req.query.volume,
+        origin: req.query.origin,
+        alcoholPercentage: req.query.alcoholPercentage,
+        description: req.query.description
+    }
+
+    res.send(wines.addWine(name, data))
 })
 
 // Edit a wine
@@ -37,5 +47,5 @@ app.put("/wines", (req, res) => {
 })
 
 app.listen(3001, () => {
-    console.log("Testing!")
+    console.log("Listening to port 3001!")
 })

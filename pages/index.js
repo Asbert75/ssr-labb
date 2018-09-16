@@ -1,10 +1,6 @@
 import { Component } from 'react';
 import Link from 'next/link';
 
-const isClientOrServer = () => {
-    return (typeof window !== 'undefined' && window.document) ? 'client' : 'server';
-};
-
 class Index extends Component {
     constructor(props) {
         super()

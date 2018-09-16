@@ -934,10 +934,6 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
-var isClientOrServer = function isClientOrServer() {
-  return typeof window !== 'undefined' && window.document ? 'client' : 'server';
-};
-
 var Index =
 /*#__PURE__*/
 function (_Component) {
@@ -1009,34 +1005,34 @@ function (_Component) {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 41
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 42
         }
       }, "Hello World!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
         href: "/modify",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 47
+          lineNumber: 43
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 48
+          lineNumber: 44
         }
       }, "Modify")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
         onClick: this.testDeleteWine,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 47
         }
       }, "Delete A Wine!"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 48
         }
       }, this.state.wines));
     }
