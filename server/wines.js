@@ -2,22 +2,6 @@ function error(message) {
     return { "Error": message }
 }
 
-// Check to see if all parameters are matched ---- FUNGERAR INTE ÄNNU
-function validateData(data) {
-    if(
-        (typeof data.name === "string" && data.price.length > 0)
-        && (typeof data.price === "string" && data.price.length > 0)
-        && (typeof data.currency === "string" && data.currency.length > 0)
-        && (typeof data.volume === "string" && data.volume.length > 0)
-        && (typeof data.origin === "string" && data.origin.length > 0)
-        && (typeof data.alcoholPercentage === "string" && data.alcoholPercentage > 0)
-        && (typeof data.description === "string" && data.description > 0)) {
-        return true
-    }
-    
-    return false
-}
-
 let wines = {
     list: {
         "Damigian Rosso": {
@@ -57,7 +41,7 @@ let wines = {
             }
         })
 
-        return match || error("Can't find wine'" + wine + "'!")
+        return match || error("Can't find wine '" + wine + "'.")
     },
     deleteWine: function(wine) {
         let msg
@@ -66,20 +50,19 @@ let wines = {
             if(wine === item) {
                 delete this.list[wine]
                 msg = { "Message": "Succesfully deleted '" + wine + "'!" }
-                console.log("Deleted '" + wine + "'!")
             }
         })
-        return msg || error("Can't find wine'" + wine + "'!")
+        return msg || error("Can't find wine '" + wine + "'.")
     },
     addWine: function(name, data) {
         let msg
 
-        if(!this.list[name]) {
+        if(!this.list[name] && name) {
             this.list[name] = data
             msg = { "Message": "Succesfully added '" + name + "'!" }
         }
 
-        return msg || error("Can't add wine '" + name + "'. Wine already exists.")
+        return msg || error("Can't add wine '" + name + "'.")
     },
     editWine: function(name, data) {
         let msg
@@ -91,10 +74,10 @@ let wines = {
                 }
             })
 
-            msg = { "Message": "Updated '" + name + '"!'}
+            msg = { "Message": "Successfully updated '" + name + '"!'}
         }
 
-        return msg || error("Can't find wine '" + name + "'!")
+        return msg || error("Can't find wine '" + name + "'.")
     }
 }
 

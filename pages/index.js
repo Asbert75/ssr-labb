@@ -1,53 +1,49 @@
-import { Component } from 'react';
-import Link from 'next/link';
+import { Component } from 'react'
+import Header from "../components/Header.js"
+import WineList from "../components/WineList.js"
 
 class Index extends Component {
     constructor(props) {
-        super()
+        super(props)
 
         this.state = {
             wines: []
         }
     }
-    testDeleteWine = () => {
-        fetch("http://localhost:3001/wines/Pinot Noirrr", { method: "DELETE" })
-        .then( data => data.json())
-        .then( res => console.log(res));
-    }
 
     fetchWines = () => {
-        console.log("Fetching");
-        fetch("http://localhost:3001/wines")
+        this.setState({ loaded: false })
+        fetch("http://localhost:3001/wines", { method: "GET" })
         .then( data => data.json())
         .then ( res => this.displayWines(res))
     }
 
     displayWines = (list) => {
-        let newList = []
+        let wines = []
         Object.keys(list).forEach( item => {
-            newList.push(item)
-            newList.push("\n")
+            wines.push( { 
+                name: item,
+                price: list[item].price,
+                currency: list[item].currency,
+                volume: list[item].volume,
+                origin: list[item].origin,
+                alcoholPercentage: list[item].alcoholPercentage,
+                description: list[item].description
+            })
         })
 
-        this.setState({ wines: newList })
+        this.setState({ wines, loaded: true })
     }
 
     componentDidMount() {
-        this.fetchWines();
+        this.fetchWines()
     }
 
     render() {
         return (
             <div>
-                <p>Hello World!</p>
-                <Link href="/modify">
-                    <a>Modify</a>
-                </Link>
-
-                <button onClick={ this.testDeleteWine }>Delete A Wine!</button>
-                <div>
-                    { this.state.wines }
-                </div>
+                <Header />
+                { this.state.loaded ? <WineList wines={this.state.wines} updateWineList={this.fetchWines} /> : <h2>Loading...</h2> }
             </div>
         )
     }

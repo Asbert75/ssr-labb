@@ -1,10 +1,12 @@
 const express = require("express")
 const app = express()
-const wines = require("./wines.js");
+const wines = require("./wines.js")
+const cors = require("cors")
+
+app.use(cors())
 
 app.get("/", (req, res) => {
-    // Edit this to send a .html file for server-side rendering! :-)
-    res.send("Welcome!")
+    res.send("You're probably in the wrong place visiting this link. Try /wines")
 })
 
 // Get all wines
@@ -43,7 +45,9 @@ app.post("/wines", (req, res) => {
 
 // Edit a wine
 app.put("/wines", (req, res) => {
-    res.send("Put test")
+    let name = req.query.name;
+
+    res.send(wines.editWine(name, req.query))
 })
 
 app.listen(3001, () => {
