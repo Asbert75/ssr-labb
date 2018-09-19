@@ -33,11 +33,11 @@ app.post("/wines", (req, res) => {
     let name = req.query.name;
     let data = { 
         price: req.query.price,
-        currency: req.query.currency,
         volume: req.query.volume,
         origin: req.query.origin,
-        alcoholPercentage: req.query.alcoholPercentage,
-        description: req.query.description
+        alcohol: req.query.alcohol,
+        description: req.query.description,
+        year: req.query.year
     }
 
     res.send(wines.addWine(name, data))

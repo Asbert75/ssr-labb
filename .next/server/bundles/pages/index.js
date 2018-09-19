@@ -67,7 +67,7 @@ module.exports =
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 3);
+/******/ 	return __webpack_require__(__webpack_require__.s = 4);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -83,63 +83,153 @@ module.exports =
 var _jsxFileName = "C:\\Users\\Erik\\Dropbox\\Frontend Utvecklare 2017\\Serverside\\Labb 1\\labb-ssr\\components\\Header.js";
 
 
-var style = {//backgroundColor: "red"
+var ulStyle = {
+  display: "flex",
+  justifyContent: "space-between",
+  alignItems: "center",
+  padding: "1em"
+};
+var headerStyle = {
+  display: "inline-block",
+  marginRight: "2em",
+  fontFamily: "Arial"
+};
+var linkStyle = {
+  display: "inline-block",
+  marginRight: "1em",
+  fontFamily: "Arial"
+};
+var liStyle = {
+  display: "inline-block",
+  marginRight: "1em"
 };
 
 var Header = function Header(props) {
   return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 8
+      lineNumber: 28
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
+    style: ulStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 9
+      lineNumber: 29
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+    style: headerStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 30
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
+    className: "head",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 31
     }
-  }, "The Cellar")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+  }, "THE CELLAR")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+    style: liStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 11
+      lineNumber: 33
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
     href: "/",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 12
+      lineNumber: 34
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    style: style,
+    style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 13
+      lineNumber: 35
     }
-  }, "HOME")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
-    href: "/help",
+  }, "View Wines")), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+    href: "/addWine",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 15
+      lineNumber: 37
     }
   }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("a", {
-    style: style,
+    style: linkStyle,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 38
     }
-  }, "HELP")))));
+  }, "Add New Wine")))));
 };
 
 /* harmony default export */ __webpack_exports__["a"] = (Header);
+
+/***/ }),
+
+/***/ "./components/Meta.js":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__ = __webpack_require__("styled-jsx/style");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head__ = __webpack_require__("next/head");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
+var _jsxFileName = "C:\\Users\\Erik\\Dropbox\\Frontend Utvecklare 2017\\Serverside\\Labb 1\\labb-ssr\\components\\Meta.js";
+
+
+
+
+var Meta = function Meta() {
+  return __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("div", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    className: "jsx-828598222"
+  }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2_next_head___default.a, {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    }
+  }, __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+    name: "viewport",
+    content: "width=device-width, initial-scale=1, shrink-to-fit=no",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    className: "jsx-828598222"
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("meta", {
+    charSet: "utf-8",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    className: "jsx-828598222"
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
+    href: "https://fonts.googleapis.com/css?family=Roboto:400,500,700",
+    rel: "stylesheet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    className: "jsx-828598222"
+  }), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement("link", {
+    href: "https://fonts.googleapis.com/css?family=Passion+One",
+    rel: "stylesheet",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 9
+    },
+    className: "jsx-828598222"
+  })), __WEBPACK_IMPORTED_MODULE_1_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_styled_jsx_style___default.a, {
+    styleId: "828598222",
+    css: "*{margin:0;padding:0;font-family:\"Roboto\";color:#333;}body{background:#ededed;}a{-webkit-text-decoration:none;text-decoration:none;color:#722f37;}a:hover{color:#a5434f;}.head{font-family:'Passion One';font-size:2em;}.price{font-family:'Passion One';font-size:2em;}.placeholder{width:86px;height:86px;}button{font-weight:500;text-transform:uppercase;padding:0.6em 0.8em;border:0;background:none;opacity:0.8;}button:hover{cursor:pointer;opacity:1;}button.delete{color:#ef5858;margin-left:1em;}input[type=text]{padding:0.5em;border:1px solid rgba(0,0,0,0.1);}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXE1ldGEuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBV3VCLEFBR3NCLEFBT1UsQUFJRSxBQUtQLEFBSVksQUFLQSxBQUtmLEFBU0ssQUFTRCxBQUtELEFBS0EsU0F6REosRUE4QkUsR0FkaEIsQUFxQ29CLEFBS29CLENBVjFCLENBVGUsR0F0Q0osQUFNekIsSUF3QkEsRUFrQkEsQ0E3QmtCLEFBS0EsSUE2QmxCLFVBcERlLEFBbUJmLEFBS0EsQ0Fjd0IsTUFtQnhCLEdBaERrQixDQVJsQixVQXNDYSxHQTdCYixNQThCb0IsZ0JBQ0osWUFDaEIiLCJmaWxlIjoiY29tcG9uZW50c1xcTWV0YS5qcyIsInNvdXJjZVJvb3QiOiJDOlxcVXNlcnNcXEVyaWtcXERyb3Bib3hcXEZyb250ZW5kIFV0dmVja2xhcmUgMjAxN1xcU2VydmVyc2lkZVxcTGFiYiAxXFxsYWJiLXNzciIsInNvdXJjZXNDb250ZW50IjpbImltcG9ydCBIZWFkIGZyb20gJ25leHQvaGVhZCdcclxuXHJcbmNvbnN0IE1ldGEgPSAoKSA9PiAoXHJcbiAgPGRpdj5cclxuICAgIDxIZWFkPlxyXG4gICAgICAgIDxtZXRhIG5hbWU9XCJ2aWV3cG9ydFwiIGNvbnRlbnQ9XCJ3aWR0aD1kZXZpY2Utd2lkdGgsIGluaXRpYWwtc2NhbGU9MSwgc2hyaW5rLXRvLWZpdD1ub1wiIC8+XHJcbiAgICAgICAgPG1ldGEgY2hhclNldD1cInV0Zi04XCIgLz5cclxuICAgICAgICA8bGluayBocmVmPVwiaHR0cHM6Ly9mb250cy5nb29nbGVhcGlzLmNvbS9jc3M/ZmFtaWx5PVJvYm90bzo0MDAsNTAwLDcwMFwiIHJlbD1cInN0eWxlc2hlZXRcIiAvPlxyXG4gICAgICAgIDxsaW5rIGhyZWY9XCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2Nzcz9mYW1pbHk9UGFzc2lvbitPbmVcIiByZWw9XCJzdHlsZXNoZWV0XCIgLz5cclxuXHJcbiAgICA8L0hlYWQ+XHJcbiAgICA8c3R5bGUganN4IGdsb2JhbD57YFxyXG4gICAgICAgICoge1xyXG4gICAgICAgICAgICBtYXJnaW46IDA7XHJcbiAgICAgICAgICAgIHBhZGRpbmc6IDA7XHJcbiAgICAgICAgICAgIGZvbnQtZmFtaWx5OiBcIlJvYm90b1wiO1xyXG4gICAgICAgICAgICBjb2xvcjogIzMzMztcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIGJvZHkgeyBcclxuICAgICAgICAgICAgYmFja2dyb3VuZDogI2VkZWRlZDtcclxuICAgICAgICB9XHJcbiAgICAgICAgXHJcbiAgICAgICAgYSB7XHJcbiAgICAgICAgICAgIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcclxuICAgICAgICAgICAgY29sb3I6ICM3MjJmMzc7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBhOmhvdmVyIHtcclxuICAgICAgICAgICAgY29sb3I6ICNhNTQzNGY7XHJcbiAgICAgICAgfVxyXG4gICAgICAgIFxyXG4gICAgICAgIC5oZWFkIHtcclxuICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdQYXNzaW9uIE9uZSc7XHJcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMmVtO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLnByaWNlIHtcclxuICAgICAgICAgICAgZm9udC1mYW1pbHk6ICdQYXNzaW9uIE9uZSc7XHJcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMmVtO1xyXG4gICAgICAgIH1cclxuXHJcbiAgICAgICAgLnBsYWNlaG9sZGVyIHtcclxuICAgICAgICAgICAgd2lkdGg6IDg2cHg7XHJcbiAgICAgICAgICAgIGhlaWdodDogODZweDtcclxuICAgICAgICB9XHJcblxyXG4gICAgICAgIC5vdXRsaW5lIHtcclxuICAgICAgICAgICAgLy9vdXRsaW5lOiAxcHggc29saWQgcmVkO1xyXG4gICAgICAgIH1cclxuICAgICAgICBcclxuICAgICAgICBidXR0b24ge1xyXG4gICAgICAgICAgICBmb250LXdlaWdodDogNTAwO1xyXG4gICAgICAgICAgICB0ZXh0LXRyYW5zZm9ybTogdXBwZXJjYXNlO1xyXG4gICAgICAgICAgICBwYWRkaW5nOiAwLjZlbSAwLjhlbTtcclxuICAgICAgICAgICAgYm9yZGVyOiAwO1xyXG4gICAgICAgICAgICBiYWNrZ3JvdW5kOiBub25lO1xyXG4gICAgICAgICAgICBvcGFjaXR5OiAwLjg7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBidXR0b246aG92ZXIge1xyXG4gICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XHJcbiAgICAgICAgICAgIG9wYWNpdHk6IDE7XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBidXR0b24uZGVsZXRlIHtcclxuICAgICAgICAgICAgY29sb3I6ICNlZjU4NTg7XHJcbiAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAxZW07XHJcbiAgICAgICAgfVxyXG5cclxuICAgICAgICBpbnB1dFt0eXBlPXRleHRdIHtcclxuICAgICAgICAgICAgcGFkZGluZzogMC41ZW07XHJcbiAgICAgICAgICAgIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4xKTtcclxuICAgICAgICB9XHJcbiAgICBgfTwvc3R5bGU+XHJcbiAgPC9kaXY+XHJcbilcclxuXHJcbmV4cG9ydCBkZWZhdWx0IE1ldGEgIl19 */\n/*@ sourceURL=components\\Meta.js */"
+  }));
+};
+
+/* harmony default export */ __webpack_exports__["a"] = (Meta);
 
 /***/ }),
 
@@ -178,7 +268,58 @@ var ulStyle = {
   border: "0px solid red"
 };
 var liStyle = {
-  listStyleType: "none"
+  listStyleType: "none",
+  padding: "2em",
+  paddingBottom: "0.5em",
+  display: "flex",
+  flexDirection: "column",
+  borderBottom: "1px solid rgba(0, 0, 0, 0.1)"
+};
+var successStyle = {
+  background: "#bceda6",
+  display: "inline-block",
+  listStyleType: "none",
+  width: "100%",
+  paddingTop: "0.5em",
+  paddingBottom: "0.5em"
+};
+var errorStyle = {
+  background: "#eaa4a4",
+  display: "inline-block",
+  listStyleType: "none",
+  width: "100%",
+  paddingTop: "0.5em",
+  paddingBottom: "0.5em"
+};
+var messageStyle = {
+  marginLeft: "1em",
+  fontWeight: "600",
+  color: "#333"
+};
+var wineFragment = {
+  display: "flex",
+  justifyContent: "space-between",
+  marginBottom: "1em"
+};
+var description = {
+  maxWidth: "75%",
+  paddingBottom: "2em",
+  opacity: "0.8"
+};
+var wineButtons = {
+  display: "flex",
+  justifyContent: "flex-end",
+  alignItems: "flex-end"
+};
+var editButtons = {
+  display: "flex",
+  justifyContent: "flex-start",
+  marginTop: "1em"
+};
+var wineImage = {};
+var wineHead = {
+  display: "flex",
+  flexDirection: "row"
 };
 
 var WineList =
@@ -202,33 +343,10 @@ function (_Component) {
         }).then(function (data) {
           return data.json();
         }).then(function (res) {
-          console.log(res); // Refresh Wines List
-
+          // Refresh Wines List
           _this.props.updateWineList();
-        });
-      }
-    });
-    Object.defineProperty(_assertThisInitialized(_this), "createWine", {
-      configurable: true,
-      enumerable: true,
-      writable: true,
-      value: function value(data) {
-        var query;
-        query += "name=" + data.name;
-        query += "&price=" + data.price;
-        query += "&currency=" + data.currency;
-        query += "&volume=" + data.volume;
-        query += "&origin=" + data.origin;
-        query += "&alcoholPercentage=" + data.alcoholPercentage;
-        query += "&description=" + data.description;
-        fetch("http://localhost:3001/wines?" + query, {
-          method: "POST"
-        }).then(function (data) {
-          return data.json();
-        }).then(function (res) {
-          console.log(res); // Refresh Wines List
 
-          _this.props.updateWineList();
+          _this.displayInformation(res);
         });
       }
     });
@@ -237,16 +355,16 @@ function (_Component) {
       enumerable: true,
       writable: true,
       value: function value(data) {
-        var query;
+        var query = "";
 
         if (data.name) {
           query += "name=" + data.name;
           if (data.price) query += "&price=" + data.price;
-          if (data.currency) query += "&currency=" + data.currency;
           if (data.volume) query += "&volume=" + data.volume;
           if (data.origin) query += "&origin=" + data.origin;
-          if (data.alcoholPercentage) query += "&alcoholPercentage=" + data.alcoholPercentage;
+          if (data.alcohol) query += "&alcohol=" + data.alcohol;
           if (data.description) query += "&description=" + data.description;
+          if (data.year) query += "&year=" + data.year;
         }
 
         fetch("http://localhost:3001/wines?" + query, {
@@ -254,9 +372,15 @@ function (_Component) {
         }).then(function (data) {
           return data.json();
         }).then(function (res) {
-          console.log(res); // Refresh Wines List
-
+          // Refresh wine list and remove edit data
           _this.props.updateWineList();
+
+          _this.setState({
+            edit: false,
+            data: null
+          }, function () {
+            _this.displayInformation(res);
+          });
         });
       }
     });
@@ -277,220 +401,345 @@ function (_Component) {
       }
     });
     _this.state = {
-      edit: false
+      edit: false,
+      recentlyEdited: false
     };
     return _this;
   }
 
   _createClass(WineList, [{
+    key: "displayInformation",
+    value: function displayInformation(res) {
+      var _this2 = this;
+
+      this.setState({
+        res: res
+      }, function () {
+        setTimeout(function () {
+          _this2.setState({
+            res: null
+          });
+        }, 2000);
+      });
+    }
+  }, {
     key: "render",
     value: function render() {
-      var _this2 = this;
+      var _this3 = this;
 
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("ul", {
         style: ulStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 83
+          lineNumber: 136
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
-        style: liStyle,
-        key: "addWine",
+      }, this.state.res ? this.state.res.Message ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        style: successStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 84
+          lineNumber: 139
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-        onClick: this.createWine,
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        style: messageStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 86
+          lineNumber: 140
         }
-      }, "Add Wine")), this.props.wines.map(function (wine) {
-        return _this2.state.edit ? _this2.state.data.name === wine.name ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+      }, this.state.res.Message)) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        style: errorStyle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 142
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        style: messageStyle,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 143
+        }
+      }, this.state.res.Error)) : null, this.props.wines.map(function (wine) {
+        return _this3.state.edit ? _this3.state.data.tempName === wine.name ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
           style: liStyle,
           key: wine.name,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 91
+            lineNumber: 149
           }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h4", {
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 92
+            lineNumber: 150
           }
-        }, "Editing ", wine.name), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
+        }, "Editing ", _this3.state.data.tempName), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 93
+            lineNumber: 151
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 152
           }
         }, "Name"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
           name: "name",
           type: "text",
-          value: _this2.state.data.name,
-          onChange: _this2.handleInput,
+          value: _this3.state.data.name,
+          onChange: _this3.handleInput,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 94
+            lineNumber: 153
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 153
           }
         }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 95
+            lineNumber: 154
           }
         }, "Price"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
           name: "price",
           type: "text",
-          value: _this2.state.data.price,
-          onChange: _this2.handleInput,
+          value: _this3.state.data.price,
+          onChange: _this3.handleInput,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 96
+            lineNumber: 155
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 155
           }
         }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 97
-          }
-        }, "Currency"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
-          name: "currency",
-          type: "text",
-          value: _this2.state.data.currency,
-          onChange: _this2.handleInput,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 98
-          }
-        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 99
+            lineNumber: 156
           }
         }, "Volume"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
           name: "volume",
           type: "text",
-          value: _this2.state.data.volume,
-          onChange: _this2.handleInput,
+          value: _this3.state.data.volume,
+          onChange: _this3.handleInput,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 100
+            lineNumber: 157
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 157
           }
         }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 101
+            lineNumber: 158
           }
         }, "Origin"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
           name: "origin",
           type: "text",
-          value: _this2.state.data.origin,
-          onChange: _this2.handleInput,
+          value: _this3.state.data.origin,
+          onChange: _this3.handleInput,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 102
+            lineNumber: 159
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 159
           }
         }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 103
+            lineNumber: 160
           }
-        }, "Alcohol"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
-          name: "alcoholPercentage",
+        }, "Year"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+          name: "year",
           type: "text",
-          value: _this2.state.data.alcoholPercentage,
-          onChange: _this2.handleInput,
+          value: _this3.state.data.year,
+          onChange: _this3.handleInput,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 104
+            lineNumber: 161
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 161
           }
         }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 105
+            lineNumber: 162
+          }
+        }, "Percentage"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+          name: "alcohol",
+          type: "text",
+          value: _this3.state.data.alcohol,
+          onChange: _this3.handleInput,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 163
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("br", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 163
+          }
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("label", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 164
           }
         }, "Description"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
           name: "description",
           type: "text",
-          value: _this2.state.data.description,
-          onChange: _this2.handleInput,
+          value: _this3.state.data.description,
+          onChange: _this3.handleInput,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 106
+            lineNumber: 165
           }
-        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-          onClick: function onClick() {},
+        }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          style: editButtons,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 107
+            lineNumber: 166
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+          onClick: function onClick() {
+            _this3.editWine(_this3.state.data);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 167
           }
         }, "Confirm"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+          className: "delete",
           onClick: function onClick() {
-            _this2.setState({
+            _this3.setState({
               edit: false,
               data: null
             });
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 108
+            lineNumber: 168
           }
-        }, "Discard")) : null : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
+        }, "Discard"))) : null : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("li", {
           style: liStyle,
           key: wine.name,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 111
+            lineNumber: 172
           }
-        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h3", {
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          style: wineFragment,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 112
+            lineNumber: 173
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          style: wineHead,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 174
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: "outline",
+          style: wineImage,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 175
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("img", {
+          className: "placeholder",
+          src: "https://i.imgur.com/ifP1DzO.png",
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 176
+          }
+        })), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: "outline",
+          style: wine,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 178
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 179
           }
         }, wine.name), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 113
+            lineNumber: 180
           }
-        }, "Price: ", wine.price + wine.currency), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        }, wine.origin, ", ", wine.year))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          className: "outline",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 114
+            lineNumber: 183
           }
-        }, "Volume: ", wine.volume), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
+          className: "price",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 115
+            lineNumber: 184
           }
-        }, "Origin: ", wine.origin), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        }, wine.price, ":-"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 116
+            lineNumber: 185
           }
-        }, "Alcohol: ", wine.alcoholPercentage, "%"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+        }, wine.alcohol, "%, ", wine.volume))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          style: wineFragment,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 117
+            lineNumber: 188
           }
-        }, "Description: ", wine.description), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("p", {
+          style: description,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 189
+          }
+        }, wine.description), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+          style: wineButtons,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 190
+          }
+        }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+          className: "edit",
           onClick: function onClick() {
-            _this2.deleteWine(wine.name);
-          },
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 118
-          }
-        }, "Delete"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
-          onClick: function onClick() {
-            _this2.setState({
+            var data = _objectSpread({}, wine, {
+              tempName: wine.name
+            });
+
+            _this3.setState({
               edit: true,
-              data: wine
+              data: data
             });
           },
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 119
+            lineNumber: 191
           }
-        }, "Edit"));
+        }, "Edit"), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("button", {
+          className: "delete",
+          onClick: function onClick() {
+            _this3.deleteWine(wine.name);
+          },
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 199
+          }
+        }, "Remove"))));
       }));
     }
   }]);
@@ -511,6 +760,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__components_Header_js__ = __webpack_require__("./components/Header.js");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_WineList_js__ = __webpack_require__("./components/WineList.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_Meta_js__ = __webpack_require__("./components/Meta.js");
 var _jsxFileName = "C:\\Users\\Erik\\Dropbox\\Frontend Utvecklare 2017\\Serverside\\Labb 1\\labb-ssr\\pages\\index.js";
 
 
@@ -532,6 +782,13 @@ function _assertThisInitialized(self) { if (self === void 0) { throw new Referen
 
 
 
+var bodyStyle = {
+  width: "800px",
+  margin: "0 auto",
+  background: "white",
+  padding: "1em"
+};
+
 var Index =
 /*#__PURE__*/
 function (_Component) {
@@ -548,10 +805,6 @@ function (_Component) {
       enumerable: true,
       writable: true,
       value: function value() {
-        _this.setState({
-          loaded: false
-        });
-
         fetch("http://localhost:3001/wines", {
           method: "GET"
         }).then(function (data) {
@@ -571,11 +824,11 @@ function (_Component) {
           wines.push({
             name: item,
             price: list[item].price,
-            currency: list[item].currency,
             volume: list[item].volume,
             origin: list[item].origin,
-            alcoholPercentage: list[item].alcoholPercentage,
-            description: list[item].description
+            alcohol: list[item].alcohol,
+            description: list[item].description,
+            year: list[item].year
           });
         });
 
@@ -600,26 +853,32 @@ function (_Component) {
     key: "render",
     value: function render() {
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
+        style: bodyStyle,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 51
         }
-      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Header_js__["a" /* default */], {
+      }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_3__components_Meta_js__["a" /* default */], {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 45
+          lineNumber: 52
+        }
+      }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Header_js__["a" /* default */], {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
         }
       }), this.state.loaded ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_2__components_WineList_js__["a" /* default */], {
         wines: this.state.wines,
         updateWineList: this.fetchWines,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 54
         }
       }) : __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("h2", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 46
+          lineNumber: 54
         }
       }, "Loading..."));
     }
@@ -632,11 +891,18 @@ function (_Component) {
 
 /***/ }),
 
-/***/ 3:
+/***/ 4:
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__("./pages/index.js");
 
+
+/***/ }),
+
+/***/ "next/head":
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 
@@ -651,6 +917,13 @@ module.exports = require("next/link");
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "styled-jsx/style":
+/***/ (function(module, exports) {
+
+module.exports = require("styled-jsx/style");
 
 /***/ })
 

@@ -6,27 +6,43 @@ let wines = {
     list: {
         "Damigian Rosso": {
             "price": "255",
-            "currency": "sek",
             "volume": "750ml",
             "origin": "Italy",
-            "alcoholPercentage": "14",
+            "year": "2011",
+            "alcohol": "14",
             "description": "Nuanced, spicy taste with a hint of plums, blueberry, liquorice, dark cherries and black olives."
         },
         "Munaloss": {
             "price": "139",
-            "currency": "sek",
             "volume": "750ml",
             "origin": "Italy",
-            "alcoholPercentage": "12",
+            "year": "1995",
+            "alcohol": "12",
             "description": "Spicy, nuanced taste with a hint of forest berries, cherries, liquorice, rosemarin, tar and orange."
         },
         "Pinot Noir": {
             "price": "99",
-            "currency": "sek",
             "volume": "1000ml",
             "origin": "France",
-            "alcoholPercentage": "13",
+            "year": "1929",
+            "alcohol": "13",
             "description": "It's a wine, dude."
+        },
+        "Cerrogallina": {
+            "price": "239",
+            "volume": "750ml",
+            "origin": "Spain",
+            "year": "2017",
+            "alcohol": "14",
+            "description": "Drycken lagerförs av leverantör och inte av Systembolaget. Den är inte provad av Systembolaget och därför visas ingen smakbeskrivning. Ta gärna kontakt med leverantören för mer information om drycken."
+        },
+        "La Gargantilla": {
+            "price": "209",
+            "volume": "750ml",
+            "origin": "Spain",
+            "year": "2000",
+            "alcohol": "15",
+            "description": "Nyanserad smak med inslag av fat, jordgubbar, örter, mörka körsbär, skogshallon, blåbär och vanilj. Serveras vid 16-18°C till rätter av fläsk-, lamm- eller nötkött."
         }
     },
     listWines: function() {

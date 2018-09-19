@@ -1,6 +1,14 @@
 import { Component } from 'react'
 import Header from "../components/Header.js"
 import WineList from "../components/WineList.js"
+import Meta from "../components/Meta.js"
+
+const bodyStyle = {
+    width: "800px",
+    margin: "0 auto",
+    background: "white",
+    padding: "1em"
+}
 
 class Index extends Component {
     constructor(props) {
@@ -12,7 +20,6 @@ class Index extends Component {
     }
 
     fetchWines = () => {
-        this.setState({ loaded: false })
         fetch("http://localhost:3001/wines", { method: "GET" })
         .then( data => data.json())
         .then ( res => this.displayWines(res))
@@ -24,11 +31,11 @@ class Index extends Component {
             wines.push( { 
                 name: item,
                 price: list[item].price,
-                currency: list[item].currency,
                 volume: list[item].volume,
                 origin: list[item].origin,
-                alcoholPercentage: list[item].alcoholPercentage,
-                description: list[item].description
+                alcohol: list[item].alcohol,
+                description: list[item].description,
+                year: list[item].year
             })
         })
 
@@ -41,7 +48,8 @@ class Index extends Component {
 
     render() {
         return (
-            <div>
+            <div style={bodyStyle}>
+                <Meta />
                 <Header />
                 { this.state.loaded ? <WineList wines={this.state.wines} updateWineList={this.fetchWines} /> : <h2>Loading...</h2> }
             </div>
